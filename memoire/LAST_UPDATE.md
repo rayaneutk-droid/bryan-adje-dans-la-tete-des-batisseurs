@@ -18,7 +18,7 @@ Important link constraint: avoid public URLs that foreground Rayane's name. Pref
 
 ## Website
 
-Static showcase site for **Dans la tete des batisseurs**.
+Static invite-facing site for **Dans la tete des batisseurs**.
 
 Main files:
 
@@ -32,12 +32,12 @@ Main files:
 
 ## Current Direction
 
+- Refondue as a private pre-launch invite page for Imran and Malick Diarrassouba.
 - Keep the AI-generated logo because Bryan cares about it.
-- Remove the "AI slop" pitch-deck feeling.
-- Use a premium black/gold visual identity.
-- Emphasize the podcast as a real media/business-development project.
-- Highlight "Vision Bara": prepare, extract, deploy.
-- Responsive orientation: Mac, iPad, iPhone, iOS safe areas, mobile sheet nav, Apple-like typography.
+- Use a sober editorial and typographic direction, with the logo as the only visual asset.
+- Do not use public portraits or scraped images before guest validation.
+- Present the project vision, why the two brothers make a strong pilot episode, the image-promotion value, the before/during/after flow, and editorial comfort rules.
+- Responsive orientation: desktop and mobile, with mobile menu and no horizontal overflow.
 
 ## Pilot Episode
 
@@ -76,7 +76,7 @@ Note: GitHub Pages necessarily includes the GitHub account owner in the domain. 
 
 ## Publishing Plan
 
-Rayane asked to push to GitHub and make the site accessible to Bryan.
+Previous public site was pushed to GitHub and made accessible to Bryan. On 2026-04-29, Rayane explicitly authorized pushing the private invite-facing refonte to GitHub.
 
 Preferred repo/project slug:
 
@@ -88,10 +88,24 @@ Published state:
 - Bryan-facing short link is active and verified: `https://is.gd/bryanadjebatisseurs`.
 - Vercel CLI was not logged in locally and waited for interactive authentication, so GitHub Pages + a short Bryan-facing URL was used for now.
 
+## Latest Implementation - 2026-04-29
+
+- Rebuilt `index.html`, `styles.css`, and `script.js` as a private invite-facing page for Imran and Malick.
+- Updated `README.md` to describe the new private invite direction.
+- Hero is centered on `Imran & Malick Diarrassouba`.
+- Sections now cover: vision, why the two brothers, image promotion, before/during/after flow, and editorial comfort.
+- Local browser checks were run with Chrome through Playwright at desktop `1440x1100` and mobile `390x920`:
+  - no console errors;
+  - no horizontal overflow;
+  - key hero and comfort sections present;
+  - mobile menu opens and sets `aria-expanded=true`.
+- In-app browser also loaded the local `file://` site with zero console errors.
+- Push to GitHub is authorized by Rayane. No Vercel deployment and no email send was performed.
+
 ## Fresh Chat Startup Prompt
 
 ```text
-Continue the Dans la tete des batisseurs public site.
+Continue the Dans la tete des batisseurs private invite site.
 
 Before doing anything, read:
 - memoire/LAST_UPDATE.md
@@ -99,5 +113,5 @@ Before doing anything, read:
 - styles.css
 - script.js
 
-Important: never push/deploy unless I explicitly ask. Avoid public URLs that foreground Rayane's name. Prefer Bryan Adje in the project slug.
+Important: never push/deploy unless I explicitly ask. The invite refonte was pushed only after Rayane explicitly authorized it. Avoid public URLs that foreground Rayane's name. Prefer Bryan Adje in the project slug.
 ```

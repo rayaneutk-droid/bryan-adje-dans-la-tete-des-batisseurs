@@ -2,21 +2,24 @@
 
 Site vitrine statique du podcast **Dans la tête des bâtisseurs**.
 
-## Vision
+## Direction actuelle
 
-Un podcast ivoirien qui documente les parcours réels de jeunes entrepreneurs: leurs débuts, leurs erreurs, leurs victoires, leurs études, leurs business, leur discipline et leur rapport au terrain.
+La page a été refondue comme support privé de pré-lancement pour l'épisode pilote avec **Imran et Malick Diarrassouba**.
 
-## Émission pilote
+Objectif:
 
-**Deux frères, deux business: comment bâtir jeune en Côte d’Ivoire ?**
+- présenter la vision du podcast aux deux invités;
+- expliquer pourquoi leur duo rend l'épisode fort;
+- montrer comment l'épisode peut servir leur image après le tournage;
+- cadrer le déroulé avant, pendant et après la visite;
+- poser clairement les règles de confort éditorial.
 
-- Imran Diarrassouba, Golden Impact.
-- Malick Diarrassouba, DGroup CI.
+## Choix éditorial
+
+La page n'utilise aucun portrait ou visuel public récupéré. Elle s'appuie uniquement sur le logo du projet, une direction typographique sobre et un ton confidentiel.
 
 ## Déploiement
 
-Le site est conçu pour être publié directement avec GitHub Pages depuis la branche `main`.
+Le site reste statique (`index.html`, `styles.css`, `script.js`).
 
-Lien public Bryan: https://is.gd/bryanadjebatisseurs
-
-Lien GitHub Pages: https://rayaneutk-droid.github.io/bryan-adje-dans-la-tete-des-batisseurs/
+Aucun push GitHub ni déploiement Vercel ne doit être fait sans confirmation explicite de Rayane.

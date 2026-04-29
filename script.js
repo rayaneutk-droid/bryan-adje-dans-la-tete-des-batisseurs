@@ -8,14 +8,19 @@ const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
-const updateHeader = () => {
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+const setHeaderState = () => {
+  header.classList.toggle("is-scrolled", window.scrollY > 20);
 };
 
-const updateProgress = () => {
+const setProgress = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   const ratio = scrollable > 0 ? window.scrollY / scrollable : 0;
   progress.style.width = `${Math.min(1, Math.max(0, ratio)) * 100}%`;
+};
+
+const closeNav = () => {
+  nav.classList.remove("is-open");
+  navToggle.setAttribute("aria-expanded", "false");
 };
 
 navToggle.addEventListener("click", () => {
@@ -25,18 +30,22 @@ navToggle.addEventListener("click", () => {
 
 nav.addEventListener("click", (event) => {
   if (event.target.matches("a")) {
-    nav.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
+    closeNav();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeNav();
   }
 });
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      revealObserver.unobserve(entry.target);
     });
   },
   { threshold: 0.12 }
@@ -57,9 +66,13 @@ const sectionObserver = new IntersectionObserver(
 revealItems.forEach((item) => revealObserver.observe(item));
 sections.forEach((section) => sectionObserver.observe(section));
 
-updateHeader();
-updateProgress();
-window.addEventListener("scroll", () => {
-  updateHeader();
-  updateProgress();
-}, { passive: true });
+setHeaderState();
+setProgress();
+window.addEventListener(
+  "scroll",
+  () => {
+    setHeaderState();
+    setProgress();
+  },
+  { passive: true }
+);
