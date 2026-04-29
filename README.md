@@ -1,14 +1,15 @@
 # Dans la tête des bâtisseurs
 
-Site vitrine statique du podcast **Dans la tête des bâtisseurs**.
+Site vitrine statique du podcast **Dans la tête des bâtisseurs**, porté publiquement par **Bryan Adje**.
 
 ## Direction actuelle
 
-La page a été refondue comme support privé de pré-lancement pour l'épisode pilote avec **Imran et Malick Diarrassouba**.
+La page a été refondue comme support privé de pré-lancement, orienté Bryan Adje, pour l'épisode pilote avec **Imran et Malick Diarrassouba**.
 
 Objectif:
 
 - présenter la vision du podcast aux deux invités;
+- garder le nom et le lien du site orientés vers Bryan Adje;
 - expliquer pourquoi leur duo rend l'épisode fort;
 - montrer comment l'épisode peut servir leur image après le tournage;
 - cadrer le déroulé avant, pendant et après la visite;

@@ -33,6 +33,7 @@ Main files:
 ## Current Direction
 
 - Refondue as a private pre-launch invite page for Imran and Malick Diarrassouba.
+- Site title, link wording, and public framing are oriented toward Bryan Adje.
 - Keep the AI-generated logo because Bryan cares about it.
 - Use a sober editorial and typographic direction, with the logo as the only visual asset.
 - Do not use public portraits or scraped images before guest validation.
