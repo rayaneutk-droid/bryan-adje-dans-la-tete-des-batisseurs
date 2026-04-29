@@ -58,7 +58,21 @@ Initial local commit:
 
 - `57098e8 Create podcast showcase site`
 
-The memory folder was added after the first commit and should be committed before push.
+Pushed commits:
+
+- `57098e8 Create podcast showcase site`
+- `7f01f96 Refine showcase site and add project memory`
+
+GitHub repository:
+
+`https://github.com/rayaneutk-droid/bryan-adje-dans-la-tete-des-batisseurs`
+
+Public site:
+
+- Bryan-facing short link: `https://is.gd/bryanadjebatisseurs`
+- GitHub Pages source link: `https://rayaneutk-droid.github.io/bryan-adje-dans-la-tete-des-batisseurs/`
+
+Note: GitHub Pages necessarily includes the GitHub account owner in the domain. A short Bryan-facing link was created to avoid showing Rayane's username in the visible URL. A cleaner future option is a custom domain or a Vercel project under a Bryan-facing slug.
 
 ## Publishing Plan
 
@@ -68,7 +82,11 @@ Preferred repo/project slug:
 
 `bryan-adje-dans-la-tete-des-batisseurs`
 
-If deploying publicly, prefer a link that shows Bryan Adje rather than Rayane's identity.
+Published state:
+
+- GitHub Pages is active and verified with HTTP `200`.
+- Bryan-facing short link is active and verified: `https://is.gd/bryanadjebatisseurs`.
+- Vercel CLI was not logged in locally and waited for interactive authentication, so GitHub Pages + a short Bryan-facing URL was used for now.
 
 ## Fresh Chat Startup Prompt
 

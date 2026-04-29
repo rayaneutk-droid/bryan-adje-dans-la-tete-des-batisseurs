@@ -16,3 +16,7 @@ Un podcast ivoirien qui documente les parcours réels de jeunes entrepreneurs: l
 ## Déploiement
 
 Le site est conçu pour être publié directement avec GitHub Pages depuis la branche `main`.
+
+Lien public Bryan: https://is.gd/bryanadjebatisseurs
+
+Lien GitHub Pages: https://rayaneutk-droid.github.io/bryan-adje-dans-la-tete-des-batisseurs/
